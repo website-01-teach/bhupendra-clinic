@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhupendra Clinic - Dietician & Nutritionist</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Bhupendra Clinic</div>
+    <ul class="nav-links">
+      <li><a href="#home" target="_self">Home</a></li>
+      <li><a href="#services" target="_self">Services</a></li>
+      <li><a href="#about" target="_self">About</a></li>
+      <li><a href="#appointment" target="_self" class="btn-nav">Book Appointment</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Bhupendra Clinic</h1>
+      <p>Professional Dietician & Nutritionist Services</p>
+      <a href="#appointment" target="_self" class="btn-primary">Book Appointment</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Weight Loss</h3>
+        <p>Personalized weight loss diet plans tailored to your body type and lifestyle.</p>
+      </div>
+      <div class="card">
+        <h3>Weight Gain</h3>
+        <p>Healthy weight gain strategies with balanced nutrition plans.</p>
+      </div>
+      <div class="card">
+        <h3>Cancer Diet</h3>
+        <p>Specialized nutrition support for cancer patients during treatment.</p>
+      </div>
+      <div class="card">
+        <h3>Diabetes Management</h3>
+        <p>Diet plans to help manage blood sugar levels effectively.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Dr. Bhupendra</h2>
+    <p>Experienced dietician and nutritionist with over 10 years of practice. Committed to helping patients achieve their health goals through personalized diet plans and continuous support.</p>
+  </section>
+
+  <section id="appointment" class="appointment">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm">
+      <div class="form-group">
+        <label>Full Name *</label>
+        <input type="text" id="fullName" required placeholder="Enter your full name" />
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" id="email" required placeholder="Enter your email" />
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" id="phone" required placeholder="+91 98765 43210" />
+      </div>
+      <div class="form-group">
+        <label>Service Interest *</label>
+        <select id="serviceInterest" required>
+          <option value="">Select a service</option>
+          <option value="weight-loss">Weight Loss</option>
+          <option value="weight-gain">Weight Gain</option>
+          <option value="cancer-diet">Cancer Diet Plan</option>
+          <option value="diabetes">Diabetes Management</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message / Health Goals</label>
+        <textarea id="message" rows="4" placeholder="Tell us about your health goals..."></textarea>
+      </div>
+      <button type="submit" id="submitBtn" class="btn-submit">
+        <span id="btnText">Submit Request</span>
+        <span id="btnSpinner" class="spinner hidden">Sending...</span>
+      </button>
+      <div id="formMessage" class="form-message"></div>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Bhupendra Clinic. All rights reserved.</p>
+    <p>Contact: bhupiender2502@gmail.com | +91 95820 82682</p>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
